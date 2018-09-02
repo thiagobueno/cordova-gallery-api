@@ -49,7 +49,7 @@ document.addEventListener('deviceready', function()
 
         $content.innerHTML = html;
 
-    }, function(error){alert(error);});
+    }, function(error){console.log(error);});
 
     window.loadAlbum = function(albumName)
     {
@@ -62,12 +62,12 @@ document.addEventListener('deviceready', function()
             {
                 var media = items[i];
 
-                html += '<a href="javascript:void()" class="media"><img src="file://' + media.data + '" /></a>';
+                html += '<a href="javascript:void()" class="media"><img src="' + media.data + '" /></a>';
             }
 
             $content.innerHTML = html;
 
-        }, function(error){alert(error);});
+        }, function(error){console.log(error);});
     };
 
 }, false);
