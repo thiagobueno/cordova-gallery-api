@@ -17,7 +17,6 @@ Returns an array of object with the following fields:
 - title
 - lat
 - lon
-- thumbnail
 - data
 - width
 - height
