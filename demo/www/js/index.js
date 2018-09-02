@@ -24,7 +24,8 @@ document.addEventListener('deviceready', function()
         galleryAPI.getMedia(albumName, function(items)
         {
             var html = "";
-
+            //reverse order
+            //for(var i = items.length-1; i >= 0; i--)
             for(var i = 0; i < items.length; i++)
             {
                 var media = items[i];
